@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 h1 {
     font-size: 50px;
+}
+
+button:hover {
+    background-color: rgb(133, 197, 199);
+}
+button:active {
+    background-color: rgb(163, 240, 243);
+}
+.fish_btn {
+    border: 8px solid #2a4647;
+    background-color: cadetblue;
+    border-radius: 1rem;
+}
+
+img {
+    width: 130px;
+    transform: rotate(-45deg);
+}
+
+body {
+    background-color: cadetblue;
+    font-family: "Comfortaa", serif;
+    color: #2a4647;
+    display: grid;
+}
+
+button {
+    background-color: cadetblue;
+    font-family: "Comfortaa", serif;
+    border: 8px solid #2a4647;
+    border-radius: 50%;
+    color: #2a4647;
+    font-size: 100;
+    width: 150px;
+    height: 150px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
 }

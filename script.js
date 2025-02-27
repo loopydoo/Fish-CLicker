@@ -4,6 +4,7 @@ var cursorPrice = 10
 var knifePrice = 100
 var spoonPrice = 1000
 var cookiePrice = 10000000000
+var danielPrice = 999999999999999
 document.getElementById("score").innerText = score + " Fish"
 function add() {
     score += scoreAdder
@@ -66,6 +67,21 @@ function buyCookie() {
         scoreAdder = Math.round(scoreAdder*10)/10
         score = Math.round(score*10)/10
         document.getElementById("cookiePrice").innerText = "$ " + cookiePrice
+        document.getElementById("score").innerText = score + " Fish"
+        document.getElementById("fpc").innerText = scoreAdder + " Fpc"
+    }
+}
+
+function buyDaniel() {
+    if (score >= danielPrice) {
+        score = score - danielPrice
+        
+        danielPrice *= 1.5
+        danielPrice = Math.round(danielPrice*10)/10
+        scoreAdder *= 50
+        scoreAdder = Math.round(scoreAdder*10)/10
+        score = Math.round(score*10)/10
+        document.getElementById("danielPrice").innerText = "$ " + danielPrice
         document.getElementById("score").innerText = score + " Fish"
         document.getElementById("fpc").innerText = scoreAdder + " Fpc"
     }
