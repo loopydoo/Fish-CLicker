@@ -3,13 +3,16 @@ var scoreAdder = 1
 var cursorPrice = 10
 var knifePrice = 100
 var spoonPrice = 1000
-var cookiePrice = 10000000000
-var danielPrice = 999999999999999
+var cookiePrice = 1000000
+var danielPrice = 999999999999
 document.getElementById("score").innerText = score + " Fish"
 function add() {
     score += scoreAdder
     score = Math.round(score*10)/10
     document.getElementById("score").innerText = score + " Fish"
+    if (score == Infinity) {
+        alert("You win!")
+    }
 }
 
 function buyCursor() {
